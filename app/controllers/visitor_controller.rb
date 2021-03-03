@@ -6,6 +6,7 @@ class VisitorController < ApplicationController
     ActionCable.server.broadcast 'finish_process', {process_name: "FIRST"}
 
     process_name = 'HARD METHOD'
-    HardJob.perform_later(process_name)
+    HardJob.perform_now(process_name)
+    # HardJob.perform_later(process_name)
   end
 end
