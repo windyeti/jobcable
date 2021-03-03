@@ -1,11 +1,11 @@
-development:
-  adapter: postgresql
-
-test:
-  adapter: postgresql
-
-production:
-  adapter: postgresql
+#development:
+#  adapter: postgresql
+#
+#test:
+#  adapter: postgresql
+#
+#production:
+#  adapter: postgresql
 
 
 
@@ -22,11 +22,11 @@ production:
 
 
 
-#redis: &redis
-#  adapter: redis
-#  url: redis://localhost:6379/1
-#
-#production: *redis
-#development: *redis
-#test:
-#  adapter: async
+redis: &redis
+  adapter: redis
+  url: redis://localhost:6379/1
+
+production: *redis
+development: *redis
+test:
+  adapter: async

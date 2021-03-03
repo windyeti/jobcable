@@ -34,6 +34,7 @@ gem 'jbuilder', '~> 2.5'
 
 gem 'delayed_job_active_record'
 gem 'unicorn'
+gem "redis", "~> 3.0"
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
