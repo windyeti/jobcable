@@ -7,6 +7,8 @@ require "capistrano/deploy"
 require 'capistrano/rails'
 require 'capistrano/rvm'
 require 'capistrano3/unicorn'
+require 'capistrano/rails/console'
+require 'capistrano/delayed_job'
 
 # Load the SCM plugin appropriate to your project:
 #

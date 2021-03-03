@@ -35,6 +35,7 @@ gem 'jbuilder', '~> 2.5'
 gem 'delayed_job_active_record'
 gem 'unicorn'
 gem "redis", "~> 3.0"
+gem 'daemons'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
@@ -54,6 +55,10 @@ group :development do
   gem 'capistrano-rails'
   gem 'capistrano-rvm'
   gem 'capistrano3-unicorn'
+  gem 'capistrano-rails-console'
+  gem 'capistrano3-delayed-job', '~> 1.0'
+  gem 'hub', :require=>nil
+  gem 'rails_layout'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
